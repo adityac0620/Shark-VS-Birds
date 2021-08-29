@@ -77,9 +77,10 @@ img {
 #bbody {
     height: 70%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(91, 146, 217, 0.75);
+    background-color: rgba(91, 146, 217, 0.25);
     padding: 10px;
 }
 
@@ -116,5 +117,6 @@ img {
 #outcome {
     font-family: 'Henny Penny', cursive;
     font-size: 2rem;
+    font-weight: bold;
     color: #020659;
 }
