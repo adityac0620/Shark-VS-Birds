@@ -1,0 +1,79 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#body{
+    height: 100%;
+    max-width: 800px;
+    margin:auto;
+}
+
+#bheader {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bheader div {
+    
+    max-width:fit-content;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+    
+    padding: 5px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: #020659;
+    
+}
+
+#bbody {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bbody div {
+    background-color:gainsboro;
+    height:100%;
+    width: 350px;
+}
+
+#bbutton {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bbutton div {
+    background-color:#F266B3;
+    max-width:fit-content;
+    font-family: 'Architects Daughter', cursive;;
+    font-size: 2rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    color: #020659;
+}
+
+#bbutton div:active {
+    background-color:#ac5786;
+    max-width:fit-content;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    color:#020659;
+}
