@@ -7,7 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shark Fight Club | Result</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../js/results.js">
+    <script>
+    const imageresult = document.querySelector(".result");
+    window.addEventListener("load", predict);
+    
+    function predict() {
+    const contestantCapacity = Math.floor(Math.random() * 200);
+    var img = document.createElement("img");
+    console.log("it works!");
+    if (contestantCapacity > blahajCapacity) {
+        img.src = "../Images/Blahaj_029.png";
+    } else {
+        img.src = "../Images/Blahaj_027.png";
+    }
+    imageresult.appendChild(img);
+}
+
     </script>
 </head>
 
