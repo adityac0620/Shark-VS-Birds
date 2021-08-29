@@ -1,3 +1,5 @@
+import predict from "./results";
+
 const video_div = document.querySelector("#video-stream");
 const clickphoto = document.querySelector("#bbutton");
 const canvas = document.querySelector("#canvas");
@@ -25,14 +27,3 @@ function clickapicture() {
     predict();
 }
 
-clickphoto.addEventListener("load", predict);
-
-function predict() {
-    const contestantCapacity = Math.floor(Math.random() * 200);
-    console.log("it works!");
-    if (contestantCapacity > blahajCapacity) {
-        imageresult.srcObject = "../Images/Blahaj_029.png";
-    } else {
-        imageresult.srcObject = "../Images/Blahaj_027.png";
-    }
-}
