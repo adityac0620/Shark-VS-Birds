@@ -1,39 +1,77 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Rampart+One&display=swap');
+body {
+    background-color: #F2F2F2;
+    background-image: url(../images/BG-Test.png);
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+
+.logo.is-animetion {
+    margin-top: 0.6em;
+}
+
+.logo.is-animetion span {
+    display: inline-block;
+    animation: wave-text 1s ease-in-out infinite;
+}
+
+.logo.is-animetion {
+    span:nth-of-type(1) {
+        animation-delay: 0.0s;
+    }
+    span:nth-of-type(2) {
+        animation-delay: 0.1s;
+    }
+    span:nth-of-type(3) {
+        animation-delay: 0.2s;
+    }
+}
+
+@keyframes wave-text {
+    00% {
+        transform: translateY(0em);
+    }
+    60% {
+        transform: translateY(-0.6em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+html,
+body {
     height: 100%;
     margin: 0;
     text-align: center;
-    
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
 
-#body{
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    max-width: 800px;
-    margin:auto;
 }
 
 #bheader {
     height: 15%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#bheader div {
-    
-    max-width:fit-content;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2rem;
-    
-    padding: 5px 10px;
-    border-radius: 5px;
-    letter-spacing: 1px;
+    font-family: 'Rampart One', cursive;
+    font-size: 2em;
+    font-weight: bold;
     color: #020659;
-    
 }
 
 #bbody {
@@ -41,12 +79,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#bbody div {
-    background-color:gainsboro;
-    height:100%;
-    width: 350px;
+    background-color: rgba(91, 146, 217, 0.75);
+    padding: 10px;
 }
 
 #bbutton {
@@ -57,10 +91,11 @@ a {
 }
 
 #bbutton div {
-    background-color:#F266B3;
-    max-width:fit-content;
-    font-family: 'Architects Daughter', cursive;;
-    font-size: 2rem;
+    background-color: #F266B3;
+    max-width: fit-content;
+    font-family: 'Henny Penny', cursive;
+    ;
+    font-size: 1.5rem;
     padding: 5px 10px;
     border-radius: 15px;
     letter-spacing: 1px;
@@ -68,12 +103,18 @@ a {
 }
 
 #bbutton div:active {
-    background-color:#ac5786;
-    max-width:fit-content;
-    font-family: 'Architects Daughter', cursive;
+    background-color: #ac5786;
+    max-width: fit-content;
+    font-family: 'Henny Penny', cursive;
     font-size: 2rem;
     padding: 5px 10px;
     border-radius: 15px;
     letter-spacing: 1px;
-    color:#020659;
+    color: #020659;
+}
+
+#outcome {
+    font-family: 'Henny Penny', cursive;
+    font-size: 2rem;
+    color: #020659;
 }
