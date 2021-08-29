@@ -7,23 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shark Fight Club | Result</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <script>
-    const imageresult = document.querySelector(".result");
-    window.addEventListener("load", predict);
-    
-    function predict() {
-    const contestantCapacity = Math.floor(Math.random() * 200);
-    var img = document.createElement("img");
-    console.log("it works!");
-    if (contestantCapacity > blahajCapacity) {
-        img.src = "../Images/Blahaj_029.png";
-    } else {
-        img.src = "../Images/Blahaj_027.png";
-    }
-    imageresult.appendChild(img);
-}
-
-    </script>
 </head>
 
 <body>
@@ -31,8 +14,8 @@
         <div id="bheader">
             <div class="logo is-animetion">
                 <span>Shark</span>
-                <span>Fight</span>
-                <span>Club</span>
+                <span>Coin</span>
+                <span>Toss</span>
             </div>
         </div>
         <div id="bbody">
@@ -40,13 +23,31 @@
             </div>
         </div>
         <div id="bbutton">
-            <a href="index.html">
+            <a href="result.html">
                 <div>
                     Rematch
                 </div>
             </a>
         </div>
     </div>
+    <script>
+        const imageresult = document.querySelector(".result");
+        window.addEventListener("load", predict);
+        const blahajCapacity = 200;
+
+        function predict() {
+            const contestantCapacity = Math.floor(Math.random() * 400);
+            var img = document.createElement("img");
+            console.log("it works!");
+            if (contestantCapacity > blahajCapacity) {
+                img.src = "../Images/Blahaj_029.png";
+            } else {
+                img.src = "../Images/Blahaj_027.png";
+            }
+            imageresult.appendChild(img);
+        }
+    </script>
+
 </body>
 
 </html>

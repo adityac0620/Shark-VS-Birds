@@ -1,5 +1,3 @@
-import predict from "./results";
-
 const video_div = document.querySelector("#video-stream");
 const clickphoto = document.querySelector("#bbutton");
 const canvas = document.querySelector("#canvas");
@@ -26,4 +24,3 @@ function clickapicture() {
     console.log(image_data_url);
     predict();
 }
-

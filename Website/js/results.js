@@ -1,6 +1,6 @@
 const imageresult = document.querySelector(".result");
 
-export function predict() {
+function predict() {
     const contestantCapacity = Math.floor(Math.random() * 200);
     var img = document.createElement("img");
     console.log("it works!");
@@ -11,4 +11,3 @@ export function predict() {
     }
     imageresult.appendChild(img);
 }
-
